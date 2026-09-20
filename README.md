@@ -1,17 +1,10 @@
 # Vishnu Vekaria
 
-**Full-Stack & AI Engineer** — Python · FastAPI · Azure · Applied NLP
+**Graduate Software Engineer | Full-Stack & AI** — Python · TypeScript · React · FastAPI · LLM APIs
 
-Building systems that are *auditable* — where every output can be traced back to the evidence that produced it.
+I build full-stack applications, backend services and applied AI products, with a focus on reliable systems where outputs can be traced back to the evidence or logic that produced them.
 
 [Portfolio](https://vishnupro.netlify.app) · [LinkedIn](https://linkedin.com/in/vekaria-vishnu) · [Email](mailto:vekariyavishnu63@gmail.com)
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 
 ---
 
@@ -19,65 +12,59 @@ Building systems that are *auditable* — where every output can be traced back 
 
 | | |
 | --- | --- |
-| **Status** | Open to graduate SWE / AI / Cloud roles — full-time from September 2026 |
-| **Degree** | BSc (Hons) Computer Science, Ulster University London |
+| **Status** | Open to graduate / junior Software Engineering & AI roles — available full-time now |
+| **Degree** | BSc (Hons) Computing Systems, Ulster University London — course completed, results pending |
 | **Location** | London, UK |
-| **Focus** | Backend services, applied NLP, cloud deployment, verifiable systems |
-| **Languages** | English, Gujarati, Hindi |
+| **Focus** | Full-stack development, backend APIs, applied AI and intelligent product workflows |
+| **Work status** | Graduate visa application planned for Dec 2026 — no employer sponsorship needed |
 
 ---
 
 ## Featured Work
 
-Each project below solves one specific hard problem.
-
 ### 🔍 [VerifyPulse](https://github.com/V-Vekaria/verifypulse) — real-time news verification
 
-Scores breaking news by how many independent, credible outlets corroborate it — instead of asserting truth, it shows the evidence.
+Scores breaking news by how many independent, credible outlets corroborate it rather than simply asserting whether a claim is true.
 
-**Problem** — a single-source story and a ten-source story look identical in a feed.
-
-**Approach** — RSS + GDELT ingestion → MiniLM sentence embeddings → cosine clustering → 3-factor confidence score (source count, source credibility, source diversity) → FastAPI + live dashboard.
+**Approach** — RSS + GDELT ingestion → MiniLM sentence embeddings → cosine clustering → confidence scoring → FastAPI + live dashboard.
 
 **Stack** — `Python` `FastAPI` `sentence-transformers` `SQLite`
 
-**Concepts** — semantic clustering, weighted scoring design, scheduled ingestion pipelines, deduplication
+**Engineering** — semantic clustering, scheduled ingestion, deduplication, REST APIs and automated tests.
 
 ---
 
-### 🔐 [SecureTransfer](https://github.com/V-Vekaria/privacy-preserving-file-transfer-platform) — zero-knowledge file transfer
+### 🧾 [Longhand](https://github.com/V-Vekaria/longhand) — auditable AI tax assistant
 
-Client-side encrypted transfer where the server can detect abuse without ever reading a file.
+Built with one teammate for the AMD Developer Hackathon (ACT II). Every calculated figure can be traced back to the rule and input that generated it.
 
-**Problem** — end-to-end encryption normally kills your ability to detect malicious usage.
+**Approach** — deterministic Python for calculations, with the AI layer used for grounded explanation rather than computing tax figures.
 
-**Approach** — browser-side encryption before upload, server stores ciphertext only, anomaly detection runs purely on transfer *metadata* (size, frequency, timing).
+**Stack** — `Python` `FastAPI` `Next.js` `Docker` `LLM APIs`
 
-**Stack** — `Python` `Flask` `WebCrypto` `SQLite`
-
-**Concepts** — threat modelling, zero-knowledge architecture, metadata-only anomaly detection
-
----
-
-### 🧾 [Longhand](https://github.com/V-Vekaria/longhand) — auditable US-expat tax assistant
-
-Built with one teammate for the AMD Developer Hackathon (ACT II). Every figure the assistant produces links back to the rule and input that generated it.
-
-**Problem** — LLM tax advice is unusable if you cannot show *why* a number is that number.
-
-**Approach** — deterministic rule layer for computation, model layer only for explanation; full citation trail per line item.
-
-**Concepts** — grounded generation, deterministic/LLM separation, audit trails
+**Concepts** — grounded generation, deterministic/LLM separation, audit trails and automated testing.
 
 **Live** — [amd-hackathon-sepia.vercel.app](https://amd-hackathon-sepia.vercel.app)
 
 ---
 
-### ☁️ [SaaS Usage Monitoring API](https://github.com/V-Vekaria/saas-usage-api) — multi-tenant metering backend
+### ☁️ [SaaS Usage Monitoring API](https://github.com/V-Vekaria/saas-usage-api) — backend monitoring platform
 
-REST API with tenant scoping, usage aggregation, and rate accounting.
+REST API for SaaS usage tracking and administrative monitoring.
 
-**Stack** — `Python` `Flask` `MongoDB` `JWT`
+**Stack** — `Python` `Flask` `MongoDB Atlas` `bcrypt` `REST APIs`
+
+**Engineering** — CRUD endpoints, authentication, role-based access control, analytics endpoints and Postman testing.
+
+---
+
+### 👤 [PersonaPage](https://github.com/V-Vekaria/personapage) — profile-sharing web product
+
+A web application for creating one profile link with different views for different audiences.
+
+**Stack** — `Next.js` `TypeScript` `Tailwind CSS` `Supabase` `Vercel`
+
+**Engineering** — full-stack product development, responsive UI, persistent data and cloud deployment.
 
 ---
 
@@ -86,25 +73,25 @@ REST API with tenant scoping, usage aggregation, and rate accounting.
 | Layer | Tools |
 | --- | --- |
 | **Languages** | Python, TypeScript, JavaScript, SQL |
-| **Backend** | FastAPI, Flask, REST design, JWT auth, RBAC, input validation |
-| **AI / NLP** | sentence-transformers, TF-IDF, embedding search, semantic clustering, RAG patterns |
-| **Cloud** | Azure App Service, Azure Functions, Netlify, Vercel, Docker |
-| **Data** | MongoDB, PostgreSQL, SQLite |
-| **Practice** | Git, GitHub Actions, Postman, pytest, API testing |
+| **Backend** | FastAPI, Flask, REST APIs, authentication, RBAC |
+| **Frontend** | React, Next.js, Tailwind CSS |
+| **AI / NLP** | LLM APIs, sentence-transformers, embeddings, semantic matching |
+| **Data** | MongoDB Atlas, Supabase, SQLite, SQL |
+| **Cloud & DevOps** | Azure Functions, Vercel, Netlify, Docker |
+| **Practice** | Git, GitHub, Postman, automated testing, API documentation |
 
 ---
 
 ## Currently
 
-- Extending **VerifyPulse** into multilingual claim tracking (Phase 3)
-- Contributing to **[google/adk-python](https://github.com/google/adk-python)** — agent development kit
-- Dissertation: privacy-preserving transfer with metadata-driven anomaly detection
+- Extending **VerifyPulse** with additional AI/NLP capabilities
+- Developing and testing full-stack and AI product prototypes
+- Open to graduate and junior software engineering opportunities in London and across the UK
 
 ---
 
 ## Contact
 
-Open to graduate roles in the UK (Skilled Worker sponsorship required) and, longer term, East Asia.
-
-**Portfolio:** [vishnupro.netlify.app](https://vishnupro.netlify.app)
-**LinkedIn:** [linkedin.com/in/vekaria-vishnu](https://linkedin.com/in/vekaria-vishnu)
+**Portfolio:** [vishnupro.netlify.app](https://vishnupro.netlify.app)  
+**LinkedIn:** [linkedin.com/in/vekaria-vishnu](https://linkedin.com/in/vekaria-vishnu)  
+**GitHub:** [github.com/V-Vekaria](https://github.com/V-Vekaria)
